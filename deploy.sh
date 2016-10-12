@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WSK=`locate /wsk`
+WSK='wsk'
 CURRENT_NAMESPACE=`$WSK property get --namespace | sed -n -e 's/^whisk namespace//p' | tr -d '\t '`
 echo "Current namespace is $CURRENT_NAMESPACE."
 
